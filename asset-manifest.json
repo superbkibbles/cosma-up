@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cosma-up/static/css/main.8087241b.chunk.css",
-    "main.js": "/cosma-up/static/js/main.f74d6d48.chunk.js",
-    "main.js.map": "/cosma-up/static/js/main.f74d6d48.chunk.js.map",
+    "main.js": "/cosma-up/static/js/main.cff56cd3.chunk.js",
+    "main.js.map": "/cosma-up/static/js/main.cff56cd3.chunk.js.map",
     "runtime-main.js": "/cosma-up/static/js/runtime-main.9f9083ab.js",
     "runtime-main.js.map": "/cosma-up/static/js/runtime-main.9f9083ab.js.map",
     "static/css/2.af3c1da9.chunk.css": "/cosma-up/static/css/2.af3c1da9.chunk.css",
     "static/js/2.1799d38d.chunk.js": "/cosma-up/static/js/2.1799d38d.chunk.js",
     "static/js/2.1799d38d.chunk.js.map": "/cosma-up/static/js/2.1799d38d.chunk.js.map",
     "index.html": "/cosma-up/index.html",
-    "precache-manifest.ae83d4e0f19584b163cd12a305119e18.js": "/cosma-up/precache-manifest.ae83d4e0f19584b163cd12a305119e18.js",
+    "precache-manifest.1551ccc891f74f12257db0d8daaef741.js": "/cosma-up/precache-manifest.1551ccc891f74f12257db0d8daaef741.js",
     "service-worker.js": "/cosma-up/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/cosma-up/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.8087241b.chunk.css.map": "/cosma-up/static/css/main.8087241b.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.1799d38d.chunk.js",
     "static/css/main.8087241b.chunk.css",
-    "static/js/main.f74d6d48.chunk.js"
+    "static/js/main.cff56cd3.chunk.js"
   ]
 }
