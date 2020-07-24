@@ -112,14 +112,6 @@ input:focus {
 button {
   outline: none; }
 
-@media (max-width: 1000px) {
-  html {
-    font-size: 45%; } }
-
-@media (max-width: 600px) {
-  html {
-    font-size: 25%; } }
-
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -225,3 +217,12 @@ body {
 
 .header__logo {
   padding-top: 2.6rem; }
+
+.header__mobile {
+  display: none; }
+
+@media screen and (max-width: 1000px) {
+  .header__mobile {
+    display: inline-block; }
+  .header__desktop {
+    display: none; } }
