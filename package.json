@@ -2,7 +2,6 @@
   "name": "royal-beauty",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://superbkibbles.github.io/cosma-up",
   "engines": {
     "node": "12.18.1",
     "npm": "6.14.5"
