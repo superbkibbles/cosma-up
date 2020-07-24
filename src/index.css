@@ -71,17 +71,19 @@
   position: absolute;
   top: 74%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
   color: #f7f7f7; }
   .input__text {
-    background: cadetblue;
-    color: #f7f7f7;
+    background: rgba(110, 104, 136, 0.1);
+    color: #777;
     padding: 0.5rem 2rem;
-    width: 30rem;
-    border: 1px solid #fff;
-    border-radius: 4px; }
+    width: 100%;
+    border: 1px solid rgba(110, 104, 136, 0.1);
+    border-radius: 10px;
+    box-shadow: -0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2); }
     .input__text::placeholder {
-      color: #eee; }
+      color: #777; }
 
 *,
 *::after,
@@ -110,9 +112,13 @@ input:focus {
 button {
   outline: none; }
 
+@media (max-width: 1000px) {
+  html {
+    font-size: 45%; } }
+
 @media (max-width: 600px) {
   html {
-    font-size: 30%; } }
+    font-size: 25%; } }
 
 body {
   font-family: "Lato", sans-serif;
