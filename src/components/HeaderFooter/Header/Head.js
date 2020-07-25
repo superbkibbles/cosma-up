@@ -1,41 +1,38 @@
-import React from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
+import React, { Suspense } from 'react';
 
-import SearchBox from "../../SearchBox";
-import Logo from '../../../assets/svgs/logo.js';
+const Desktop = React.lazy(() => import('./HeaderDesktop'));
+const Mobile = React.lazy(() => import('./HeaderMobile'));
 
-export default () => {
-    const inputChange = (e) => {
-        console.log(e.target.value);
-    };
+export default class extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            width: null
+        };
+    }
+    componentDidMount() {
+        this.setState({ width: window.innerWidth });
+        window.addEventListener('resize', () => {
+            this.setState({ width: window.innerWidth });
+        });
+    }
 
-    return (
-        <Container fluid className='header'>
-            <div className='header__desktop'>
-                <Row>
-                    <Col>
-                        <div className='header__logo'>
-                            <Logo width={'23.5rem'} height={'10rem'} />
-                        </div>
-                    </Col>
-                    <Col>
-                        <SearchBox inputChange={inputChange} />
-                    </Col>
-                    <Col>
-                        <ul className='header__contact text-right'>
-                            <li className='header__contact-li'>
-                                <a href="tel:+964-750-397-8938" className='btn-text'>+9647503978938</a>
-                            </li>
-                            <li className='header__contact-li'>time of work</li>
-                            <li className='header__contact-li'>8:30 am - 7:30pm</li>
-                        </ul>
-                    </Col>
-                </Row>
-            </div>
+    render() {
+        const { width } = this.state;
 
-            <div className='header__mobile'>
-                mobile version
-            </div>
-        </Container>
-    )
+        return (
+            <Suspense fallback={<div>loading...</div>}>
+                {
+                    width > 1000 ?
+                    <Desktop />:
+                    <Mobile />
+
+                }
+            </Suspense>
+        )
+    }
 }
+
+// {/*<div className='header__mobile'>*/}
+// {/*    mobile version*/}
+// {/*</div>*/}
