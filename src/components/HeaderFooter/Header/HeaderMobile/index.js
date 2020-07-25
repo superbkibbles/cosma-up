@@ -13,29 +13,36 @@ export default () => {
     // };
 
     return (
-        <div className='header__mobile'>
-            <div className='header__mobile__contact'>
-                <p className='paragraph'>Time of work 8:30 am - 7:30 pm <span className='header__mobile__contact__span'>
-                    +(964) 750 555 5555
-                </span></p>
+        <div className='header'>
+            <div className='header__mobile'>
+                <div className='header__mobile__contact'>
+                    <p className='paragraph'>Time of work 8:30 am - 7:30 pm <span className='header__mobile__contact__span'>
+                        +(964) 750 555 5555
+                    </span></p>
+                </div>
+                <Container fluid>
+                    <Row>
+                        <Col>
+                            <div className='header__mobile__left'>
+                                <Menu className='header__mobile__left-menu' />
+                                <div className='header__mobile__left-search'>
+                                    <Search />
+                                </div>
+                            </div>
+                        </Col>
+                        <Col>
+                            <div className='header__mobile__logo'>
+                                <Logo width={'13.5rem'} height={'4rem'} />
+                            </div>
+                        </Col>
+                        <Col>
+                            <div className='header__mobile__right'>
+                                <Cart />
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
-
-            <Container fluid className='header'>
-                <Row>
-                    <Col xs={3}>
-                        <Menu />
-                        <Search />
-                    </Col>
-                    <Col xs={6}>
-                        <div style={{ textAlign: 'center' }}>
-                            <Logo width={'15.5rem'} height={'4rem'} />
-                        </div>
-                    </Col>
-                    <Col xs={3} style={{ textAlign: 'right' }}>
-                        <Cart />
-                    </Col>
-                </Row>
-            </Container>
         </div>
         )
 }
