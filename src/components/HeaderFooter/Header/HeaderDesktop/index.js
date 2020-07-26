@@ -10,7 +10,7 @@ export default () => {
     };
 
     return (
-        <Container fluid className='header'>
+        <Container fluid>
             <div className='header__desktop'>
                 <Row>
                     <Col>
